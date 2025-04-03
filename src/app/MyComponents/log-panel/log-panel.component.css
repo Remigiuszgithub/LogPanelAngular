@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  mat-card-title {
+    margin: 10px;
+  }
+  mat-form-field {
+    padding: 5px;
+  }
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  

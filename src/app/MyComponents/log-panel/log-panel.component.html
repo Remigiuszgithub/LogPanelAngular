@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Panel logowania</mat-card-title>
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Nazwa użytkownika</mat-label>
+        <input matInput [(ngModel)]="username">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Hasło</mat-label>
+        <input matInput [(ngModel)]="password" type="password">
+      </mat-form-field>
+      
+      <p style="color: red;">{{ errorMessage }}</p>
+    </mat-card-content>
+  
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="login()">Zaloguj</button>
+    </mat-card-actions>
+  </mat-card>
+  
